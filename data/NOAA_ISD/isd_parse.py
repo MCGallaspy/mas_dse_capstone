@@ -7,7 +7,10 @@ def value_or_missing(val):
     or the actual string if not
     '''
     nval = len(val)
-    return None if (val == "9"*nval) else val
+    all_9s = "9"*nval
+    signed_9s = "+" + "9" * (nval-1)
+    missing = (val == all_9s) or (val == signed_9s)
+    return None if missing else val
 
 def parse_isd_line(line):
     '''
@@ -15,8 +18,8 @@ def parse_isd_line(line):
     '''
     # Station data
     var_data_len = int(line[0:4])
-    usaf_station_id = value_or_missing(line[4:10])
-    wban_station_id = value_or_missing(line[10:15])
+    usaf_station_id = line[4:10]
+    wban_station_id = line[10:15]
     date = value_or_missing(line[15:27])
     date = datetime.datetime.strptime(date, "%Y%m%d%H%M") if date is not None else None
     latitude = value_or_missing(line[28:34])
