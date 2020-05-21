@@ -28,4 +28,6 @@ The `data` directory primarily contains notebooks for obtaining primary data and
 The `notebooks` directory contains both exploratory data analysis (EDA) of several data sets, notebooks integrating datasets, and analysis of the integrated data sets. In `notebooks/gridMet` in particular:
 
 * Notebooks 1 through 3 demonstrate obtaining gridMET data previously uploaded to S3 in another notebook, and EDA through some basic plots.
-* Notebook 4 integrates
+* Notebook 4 integrates the gridMET dataset with historical fire perimeters
+
+In `notebooks/fire_prediction_results_analysis` we combine fire predictions with economic data, in order to try to characterize fire risk.
