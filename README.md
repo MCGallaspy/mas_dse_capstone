@@ -1,12 +1,12 @@
 # About
 
-This is the capstone project for gropu 5 of the University of California San Diego's Masters of Advance Studies in Data Science and Engineering program (UCSD MAS DSE) cohort 5. 
+This is the capstone project for group 5 of the University of California San Diego's Masters of Advance Studies in Data Science and Engineering program (UCSD MAS DSE) cohort 5. 
 The group consists of Michael Gallaspy, Kevin Kannappan, Sofean Maeouf, Sathish Masilamani, Martin La Pierre.
 The goal of this project is to integrate historical weather, economic, and wildfire data in order to answer some of the following questions:
 
 * What ways are there to quantify the characteristics of wildfires? E.g. frequency, area burned and economic impact.
 * How have the characteristics of wildfires changed over the past few years?
-* Can weather be used to characterise wildfire risk?
+* Can weather be used to characterize wildfire risk?
 
 This README attempts to document the work in case others wish to replicate or adapt it, but it does not attempt to exhaustively document the various decisions for pursuing one course of action over another. For example, we explored several sources of weather data before deciding to rely on gridMET, due primarily to the ease of access and organization of that dataset, however similar decisions are generally not explained in this document or repository. For more information about the decisions and results of this project, the associated reports may be consulted.
 
